@@ -61,12 +61,13 @@ export default {
   methods: {
     async getAnswer() {
       try {
-        this.answer = await axios.get('https://julia-api-example.herokuapp.com/addxy', {
+        const res = await axios.get('https://cors-anywhere.herokuapp.com/https://julia-api-example.herokuapp.com/addxy', {
           params: {
             x: this.x,
             y: this.y
           }
-        }).answer
+        })
+        this.answer = res.data.answer
       } catch (err) {
         alert(err)
       }

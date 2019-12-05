@@ -66,7 +66,7 @@ export default {
             x: this.x,
             y: this.y
           }
-        })
+        }).answer
       } catch (err) {
         alert(err)
       }

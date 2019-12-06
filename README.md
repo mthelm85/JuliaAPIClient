@@ -1,4 +1,6 @@
-# julia
+# Julia API Client
+
+This is a simple proof-of-concept to show how to design a client app with Vue.js that calls an API written in Julia.
 
 ## Project setup
 ```
